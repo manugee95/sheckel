@@ -1,0 +1,214 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: black !important;
+}
+/* styling header */
+.navbar{
+    background-color: #00ffff;
+}
+.container .navbar-brand{
+    font-size: 2rem;
+}
+.navbar-nav{
+    gap: 10px;
+}
+.navbar-nav a{
+    color: black !important;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+/* styling header done */
+
+/* styling banner */
+.banner{
+    background: url(../img/thought-catalog-23KdVfc395A-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+.banner h2{
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    padding-top: 20%;
+    font-size: 3rem;
+}
+/* styling banner done */
+
+/* styling content */
+.first{
+    margin-bottom: 10%;
+}
+.first h1{
+    font-size: 4rem;
+    color: #00ffff;
+}
+.firstrow h1{
+    font-size: 6rem;
+    color: white;
+}
+.firstrow p{
+    font-size: 1.6rem;
+    text-align: center;
+    color: #bebebe;
+    line-height: 1.8;
+}
+.box{
+    text-align: center;
+}
+.box h2{
+    color: white;
+    font-size: 4rem;
+}
+.box p{
+    color: #bebebe;
+    font-size: 1.6rem;
+}
+.box img{
+    height: 250px;
+}
+/* styling content done */
+
+/* styling footer */
+.foot{
+    background-color: #00ffff;
+}
+.foot .row{
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 10px 0;
+}
+/* styling footer done */
+
+/* styling services */
+.left img{
+    height: 350px;
+}
+.right li{
+    font-size: 2rem;
+    color: #bebebe;
+    text-transform: uppercase;
+}
+.servicerow{
+    padding: 5% 0;
+}
+.serverow{
+    background-color: whitesmoke;
+    text-align: center;
+}
+.serverow h1{
+    font-size: 4rem;
+}
+.serverow .row{
+    padding: 5%;
+}
+.serverow img{
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 7%;
+}
+.serverow h2{
+    font-size: 2.5rem;
+    margin-bottom: 7%;
+}
+.serverow p{
+    font-size: 1.6rem;
+    margin-bottom: 7%;
+}
+/* styling services done */
+
+/* styling contact */
+.contact{
+    background: whitesmoke;
+}
+.contact h1{
+    font-size: 4rem;
+}
+.contact .row{
+    width: 80%;
+    margin: 0 auto;
+}
+.contact .row h3{
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: #03c3c3;
+    margin-bottom: 5%;
+}
+.contact .row p{
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+}
+.contact .row label{
+    font-size: 1.6rem;
+}
+.contact .row button{
+    background-color: #00ffff;
+    font-size: 1.8rem;
+    padding: 10px 15px;
+}
+.contact .row button:hover{
+    background-color: #79f9f9;
+}
+.contact .row .right img{
+    height: 350px;
+}
+/* styling contact done */
+
+@media (min-width: 300px) and (max-width: 750px) {
+    .banner{
+        background: url(../img/thought-catalog-23KdVfc395A-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+    }
+    .banner h2{
+        text-align: center;
+        text-transform: capitalize;
+        color: white;
+        padding-top: 50%;
+        font-size: 3rem;
+    }
+    .firstrow h1{
+        font-size: 4rem;
+        color: white;
+    }
+    .box img{
+        height: 230px;
+    }
+    .box h2{
+        color: white;
+        font-size: 3rem;
+    }
+    .left img{
+        height: 240px;
+    }
+    .servicerow .right{
+        margin-top: 10%;
+    }
+    .serverow img{
+        height: 250px;
+        width: 250px;
+        border-radius: 100%;
+        object-fit: cover;
+        object-position: top;
+        margin-bottom: 7%;
+    }
+    .contact .row{
+        width: 100%;
+    }
+    .contact .row .right img{
+        height: 230px;
+        margin-top: 5%;
+    }
+}
