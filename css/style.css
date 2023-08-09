@@ -200,9 +200,15 @@ body{
         padding-top: 50%;
         font-size: 3rem;
     }
-    .firstrow h1{
+    .firstrow{
+        text-align: center;
+    }
+    .first h1{
         font-size: 4rem;
-        color: white;
+        color: var(--main);
+    }
+    .firstrow img{
+        height: 250px;
     }
     .box img{
         height: 230px;
