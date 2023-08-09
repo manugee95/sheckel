@@ -59,7 +59,7 @@ body{
     margin-bottom: 10%;
 }
 .first h1{
-    font-size: 4rem;
+    font-size: 6rem;
     color: var(--main);
 }
 /* .firstrow{
@@ -73,9 +73,11 @@ body{
 }
 .firstrow p{
     font-size: 1.6rem;
-    text-align: center;
     color: #bebebe;
     line-height: 1.8;
+}
+.firstrow img{
+    height: 350px;
 }
 .box{
     text-align: center;
