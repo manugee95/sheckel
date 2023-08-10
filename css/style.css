@@ -17,15 +17,36 @@ body{
 .navbar{
     background-color: var(--primary);
     padding: 2% 0 !important;
+    position: relative;
+}
+.call{
+    position: absolute;
+    bottom: 88%;
+    left: 67%;
+    display: flex;
+    gap: 10px;
+}
+.call p{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+}
+.call h1{
+    color: var(--main);
+}
+.call i{
+    font-size: 45px;
+    color: var(--main);
 }
 .navbar img{
-    width: 100px;
+    width: 300px;
 }
 .container .navbar-brand{
     font-size: 2rem;
 }
 .navbar-nav{
-    gap: 10px;
+    gap: 30px;
+    padding-top: 7%;
 }
 .navbar-nav a{
     color: black !important;
@@ -187,6 +208,37 @@ body{
 /* styling contact done */
 
 @media (min-width: 300px) and (max-width: 750px) {
+    .call{
+        background-color: var(--primary);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        top: 30%;
+        position: static;
+        padding: 5% 10%;
+        text-align: center;
+    }
+    .call p{
+        font-size: 1.6rem;
+        color: white;
+        font-weight: bold;
+    }
+    .call h1{
+        color: var(--main);
+    }
+    .call i{
+        font-size: 20px;
+        color: black;
+    }
+    .navbar{
+        background-color: var(--primary);
+        padding: 2% 0 !important;
+        border-bottom: 2px solid white;
+    }
+    .navbar img{
+        width: 200px;
+    }
     .banner{
         background: url(../img/thought-catalog-23KdVfc395A-unsplash.jpg);
         background-size: cover;
