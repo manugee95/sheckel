@@ -260,7 +260,7 @@ body{
     }
     .call p{
         font-size: 1.6rem;
-        color: white;
+        color: black;
         font-weight: bold;
     }
     .call h1{
@@ -363,6 +363,7 @@ body{
     }
     .lastrow .right ul{
         display: flex !important;
+        justify-content: center;
         list-style: none;
         gap: 20px;
     }
