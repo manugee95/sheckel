@@ -121,9 +121,45 @@ body{
     background-color: var(--primary);
 }
 .foot .row{
-    text-align: center;
+    /* text-align: center; */
     font-size: 1.6rem;
     padding: 10px 0;
+}
+.foot img{
+    width: 300px;
+    padding-top: 10%;
+}
+.foot h2{
+    text-transform: capitalize;
+    padding-top: 5%;
+}
+.foot i{
+    font-size: 35px;
+    color: var(--main);
+}
+.foot .info p{
+    padding-top: 2%;
+}
+.lastrow{
+    display: flex;
+    justify-content: space-between;
+}
+.lastrow .left{
+    font-size: 1.6rem;
+}
+.lastrow .right ul{
+    display: flex !important;
+    list-style: none;
+    gap: 30px;
+}
+.lastrow .right ul a{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+}
+.lastrow .right ul a:hover{
+    color: var(--main);
 }
 /* styling footer done */
 
@@ -289,5 +325,50 @@ body{
     .contact .row .right img{
         height: 230px;
         margin-top: 5%;
+    }
+    .foot{
+        background-color: var(--primary);
+        text-align: center;
+    }
+    .foot .row{
+        /* text-align: center; */
+        font-size: 1.6rem;
+        padding: 10px 0;
+    }
+    .foot img{
+        width: 200px;
+        padding-top: 10%;
+    }
+    .foot h2{
+        text-transform: capitalize;
+        padding-top: 5%;
+    }
+    .foot i{
+        font-size: 35px;
+        color: var(--main);
+    }
+    .foot .info p{
+        padding-top: 2%;
+    }
+    .lastrow{
+        display: flex;
+        flex-direction: column;
+    }
+    .lastrow .left{
+        font-size: 1.6rem;
+    }
+    .lastrow .right ul{
+        display: flex !important;
+        list-style: none;
+        gap: 20px;
+    }
+    .lastrow .right ul a{
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: black;
+    }
+    .lastrow .right ul a:hover{
+        color: var(--main);
     }
 }
