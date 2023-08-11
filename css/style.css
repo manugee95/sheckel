@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     padding: 0%;
     margin: 0%;
@@ -8,6 +10,7 @@ html{
 }
 body{
     background-color: black !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 :root{
     --primary: #ffb703;
@@ -353,6 +356,7 @@ body{
     .lastrow{
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
     .lastrow .left{
         font-size: 1.6rem;
