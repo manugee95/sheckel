@@ -25,9 +25,10 @@ body{
 .call{
     position: absolute;
     bottom: 88%;
-    left: 67%;
+    left: 70%;
     display: flex;
     gap: 10px;
+    top: 10px;
 }
 .call p{
     font-size: 1.6rem;
@@ -36,6 +37,8 @@ body{
 }
 .call h1{
     color: var(--main);
+    font-weight: 900;
+    font-size: 30px;
 }
 .call i{
     font-size: 45px;
@@ -48,7 +51,7 @@ body{
     font-size: 2rem;
 }
 .navbar-nav{
-    gap: 30px;
+    gap: 20px;
     padding-top: 7%;
 }
 .navbar-nav a{
@@ -135,6 +138,7 @@ body{
 .foot h2{
     text-transform: capitalize;
     padding-top: 5%;
+    font-weight: 900;
 }
 .foot i{
     font-size: 35px;
@@ -246,7 +250,7 @@ body{
 }
 /* styling contact done */
 
-@media (min-width: 300px) and (max-width: 750px) {
+@media (min-width: 300px) and (max-width: 500px) {
     .call{
         background-color: var(--primary);
         display: flex;
@@ -289,6 +293,138 @@ body{
         text-transform: capitalize;
         color: white;
         padding-top: 50%;
+        font-size: 3rem;
+    }
+    .firstrow{
+        text-align: center;
+    }
+    .first h1{
+        font-size: 4rem;
+        color: var(--main);
+    }
+    .firstrow img{
+        height: 250px;
+    }
+    .box img{
+        height: 230px;
+    }
+    .box h2{
+        color: white;
+        font-size: 3rem;
+    }
+    .left img{
+        height: 240px;
+    }
+    .servicerow .right{
+        margin-top: 10%;
+    }
+    .serverow img{
+        height: 250px;
+        width: 250px;
+        border-radius: 100%;
+        object-fit: cover;
+        object-position: top;
+        margin-bottom: 7%;
+    }
+    .contact .row{
+        width: 100%;
+    }
+    .contact .row .right img{
+        height: 230px;
+        margin-top: 5%;
+    }
+    .foot{
+        background-color: var(--primary);
+        text-align: center;
+    }
+    .foot .row{
+        /* text-align: center; */
+        font-size: 1.6rem;
+        padding: 10px 0;
+    }
+    .foot img{
+        width: 200px;
+        padding-top: 10%;
+    }
+    .foot h2{
+        text-transform: capitalize;
+        padding-top: 5%;
+    }
+    .foot i{
+        font-size: 35px;
+        color: var(--main);
+    }
+    .foot .info p{
+        padding-top: 2%;
+    }
+    .lastrow{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .lastrow .left{
+        font-size: 1.6rem;
+    }
+    .lastrow .right ul{
+        display: flex !important;
+        justify-content: center;
+        list-style: none;
+        gap: 20px;
+    }
+    .lastrow .right ul a{
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: black;
+    }
+    .lastrow .right ul a:hover{
+        color: var(--main);
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .call{
+        background-color: var(--primary);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        top: 30%;
+        position: static;
+        padding: 5% 10%;
+        text-align: center;
+    }
+    .call p{
+        font-size: 1.6rem;
+        color: black;
+        font-weight: bold;
+    }
+    .call h1{
+        color: var(--main);
+    }
+    .call i{
+        font-size: 20px;
+        color: black;
+    }
+    .navbar{
+        background-color: var(--primary);
+        padding: 2% 0 !important;
+        border-bottom: 2px solid white;
+    }
+    .navbar img{
+        width: 200px;
+    }
+    .banner{
+        background: url(../img/thought-catalog-23KdVfc395A-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+    }
+    .banner h2{
+        text-align: center;
+        text-transform: capitalize;
+        color: white;
+        padding-top: 40%;
         font-size: 3rem;
     }
     .firstrow{
