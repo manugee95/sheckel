@@ -9,7 +9,7 @@ html{
     font-size: 10px;
 }
 body{
-    background-color: black !important;
+    /* background-color: black !important; */
     font-family: 'Montserrat', sans-serif !important;
 }
 :root{
@@ -82,12 +82,10 @@ body{
 /* styling banner done */
 
 /* styling content */
-.first{
-    margin-bottom: 10%;
-}
 .first h1{
     font-size: 6rem;
     color: var(--main);
+    font-weight: 900;
 }
 /* .firstrow{
     overflow: scroll;
@@ -100,7 +98,7 @@ body{
 }
 .firstrow p{
     font-size: 1.6rem;
-    color: #bebebe;
+    color: black;
     line-height: 1.8;
 }
 .firstrow img{
@@ -119,6 +117,109 @@ body{
 }
 .box img{
     height: 250px;
+}
+.secrow{
+    background-color: white;
+}
+.secrow .left p{
+    font-size: 2rem;
+    margin-bottom: 0%;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.secrow h1{
+    margin-top: 0%;
+    font-weight: 900;
+    font-size: 5rem;
+    text-transform: capitalize;
+    color: var(--main);
+}
+.secrow ul{
+    margin-top: 10%;
+}
+.secrow ul li{
+    /* border: 1px solid black; */
+    margin-bottom: 5%;
+    padding: 5% 0;
+    background-color: white;
+    position: relative;
+}
+.secrow ul li:hover{
+    background-color: var(--primary);
+    cursor: pointer;
+    color: white;
+}
+.secrow ul li span{
+    position: absolute;
+    left: 90%;
+}
+.secrow ul i{
+    font-weight: bolder;
+    font-size: 1.8rem;
+    color: var(--main);
+}
+.secrow ul a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-left: 5%;
+    font-weight: 900;
+    color: black;
+}
+.secrow .left{
+    background-color: whitesmoke;
+    padding: 5% 3%;
+    margin-top: 0%;
+}
+.secrow .right{
+    padding: 5% 3%;
+}
+.secrow .right p{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.secrow .right h2{
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.secrow .right .cont{
+    font-size: 1.6rem;
+    text-transform: none;
+    margin-top: 3%;
+}
+.secrow .right img{
+    margin-top: 5%;
+    position: relative;
+}
+.right .appoint{
+    border: 1px solid gray;
+    width: 35%;
+    display: flex;
+    position: absolute;
+    background-color: white;
+    padding: 2%;
+    top: 280%;
+    left: 62%;
+}
+.right .appoint p{
+    font-size: 1.6rem;
+}
+.right .appoint i{
+    font-size: 5rem;
+    color: var(--main);
+}
+.right .appoint .sidea{
+    align-self: center;
+}
+.right .appoint .sideb .title{
+    font-size: 2.5rem;
+}
+.right .appoint .sideb span{
+    font-weight: 900;
+}
+.right .appoint .sideb{
+    margin-left: 10%;
 }
 /* styling content done */
 
@@ -303,7 +404,7 @@ body{
         color: var(--main);
     }
     .firstrow img{
-        height: 250px;
+        height: 200px;
     }
     .box img{
         height: 230px;
@@ -314,6 +415,23 @@ body{
     }
     .left img{
         height: 240px;
+    }
+    .secrow .right img{
+        margin-top: 5%;
+        position: relative;
+        margin-bottom: 40%;
+        height: 250px;
+        margin-left: 30%;
+    }
+    .right .appoint{
+        border: 1px solid gray;
+        width: 90%;
+        display: flex;
+        position: absolute;
+        background-color: white;
+        padding: 2%;
+        top: 505%;
+        left: 5%;
     }
     .servicerow .right{
         margin-top: 10%;
@@ -447,6 +565,20 @@ body{
     .left img{
         height: 240px;
     }
+    .secrow .right img{
+        margin-top: 5%;
+        position: relative;
+    }
+    .right .appoint{
+        border: 1px solid gray;
+        width: 60%;
+        display: flex;
+        position: absolute;
+        background-color: white;
+        padding: 2%;
+        top: 500%;
+        left: 30%;
+    }
     .servicerow .right{
         margin-top: 10%;
     }
@@ -511,5 +643,25 @@ body{
     }
     .lastrow .right ul a:hover{
         color: var(--main);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+    .firstrow img{
+        height: 230px;
+    }
+    .secrow .right img{
+        margin-top: 5%;
+        position: relative;
+    }
+    .right .appoint{
+        border: 1px solid gray;
+        width: 40%;
+        display: flex;
+        position: absolute;
+        background-color: white;
+        padding: 2%;
+        top: 380%;
+        left: 60%;
     }
 }
