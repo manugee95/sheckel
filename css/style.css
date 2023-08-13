@@ -419,7 +419,7 @@ body{
     .secrow .right img{
         margin-top: 5%;
         position: relative;
-        margin-bottom: 40%;
+        /* margin-bottom: 40%; */
         height: 250px;
         margin-left: 25%;
     }
