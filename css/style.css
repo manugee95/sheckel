@@ -421,16 +421,16 @@ body{
         position: relative;
         margin-bottom: 40%;
         height: 250px;
-        margin-left: 30%;
+        margin-left: 25%;
     }
     .right .appoint{
         border: 1px solid gray;
         width: 90%;
-        display: flex;
+        display: none;
         position: absolute;
         background-color: white;
         padding: 2%;
-        top: 400%;
+        top: 505%;
         left: 5%;
     }
     .servicerow .right{
