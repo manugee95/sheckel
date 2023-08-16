@@ -82,19 +82,14 @@ body{
 /* styling banner done */
 
 /* styling content */
+.first .intro{
+    font-size: 3rem;
+    font-weight: 600;
+}
 .first h1{
     font-size: 6rem;
     color: var(--main);
     font-weight: 900;
-}
-/* .firstrow{
-    overflow: scroll;
-    height: 400px;
-    width: 50%;
-} */
-.firstrow h1{
-    font-size: 6rem;
-    color: white;
 }
 .firstrow p{
     font-size: 1.6rem;
@@ -103,20 +98,6 @@ body{
 }
 .firstrow img{
     height: 350px;
-}
-.box{
-    text-align: center;
-}
-.box h2{
-    color: white;
-    font-size: 4rem;
-}
-.box p{
-    color: #bebebe;
-    font-size: 1.6rem;
-}
-.box img{
-    height: 250px;
 }
 .secrow{
     background-color: white;

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    /* background-color: black !important; */
+    font-family: 'Montserrat', sans-serif !important;
+}
+:root{
+    --primary: #ffb703;
+    --main: #008000;
+}
+
+/* styling form page */
+.formbanner{
+    background-image: url(../img/form.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+}
+.formbanner p{
+    font-size: 4rem;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    top: 82.5%;
+    padding: 1% 0;
+}
+.forms{
+    margin: 5% 0 10%;
+}
+.forms p{
+    font-size: 1.7rem;
+}
+.forms li{
+    line-height: 35px;
+}
+.forms a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    color: var(--main);
+    font-weight: 900;
+}
+/* styling form page done */
+
+/* styling employee page */
+.empbanner{
+    background-image: url(../img/form_1.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+}
+.empbanner p{
+    font-size: 4rem;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    top: 82.5%;
+    padding: 1% 0;
+}
+.empform{
+    font-size: 1.7rem;
+    width: 95% !important;
+    margin: 0 auto !important;
+}
+
+.empform #layer2{
+    color: red;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.empform #layer3{
+    color: red;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.6rem;
+    padding-bottom: 2%;
+}
+.empform form{
+    border: 2px solid rgb(208, 201, 201);
+    border-radius: 1rem;
+    margin: 3% 0 5%;
+    padding: 2%;
+}
+.empform form label{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.empform form input{
+    font-size: 1.6rem;
+    padding: 4%;
+}
+.empform form input[type="radio"]{
+    height: 20px;
+    width: 30%;
+}
+.empform form input[type="checkbox"]{
+    height: 20px;
+    width: 30%;
+}
+.empform form textarea{
+    font-size: 1.6rem;
+    resize: none;
+}
+.empform form span{
+    color: red;
+}
+.empform .house label{
+    font-weight: 100;
+    text-transform: capitalize;
+}
+.empform .house{
+    border: 1px dashed gray;
+    padding: 2% 1% 0;
+}
+.empform form button{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background-color: var(--main);
+    padding: 2% 5%;
+    color: white;
+    font-weight: 900;
+}
+.empform form button:hover{
+    background-color: black !important;
+    color: white !important;
+}
+/* styling employee page done */
