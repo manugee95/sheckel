@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 *{
     padding: 0%;
@@ -9,7 +9,6 @@ html{
     font-size: 10px;
 }
 body{
-    /* background-color: black !important; */
     font-family: 'Montserrat', sans-serif !important;
 }
 :root{
@@ -36,8 +35,38 @@ body{
 .forms{
     margin: 5% 0 10%;
 }
+.forms .box img{
+    height: 300px;
+    opacity: 0.6;
+    object-fit: cover;
+}
+.forms .box img:hover ~ h5{
+    color: var(--main);
+}
+.forms .box .card{
+    margin-bottom: 10%;
+    border: 1px solid gray;
+    box-shadow: 3px 3px 15px var(--main);
+}
+.forms .box .card h5{
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: 900;
+    background-color: rgb(255, 183, 3, 0.7);
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    padding: 3% 0;
+}
+.forms .box .card h5:hover{
+    color: rgb(0, 128, 0);
+}
 .forms p{
-    font-size: 1.7rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: 900;
 }
 .forms li{
     line-height: 35px;
@@ -53,7 +82,7 @@ body{
 
 /* styling employee page */
 .empbanner{
-    background-image: url(../img/form_1.jpeg);
+    background-image: url(../img/employee_form.jpg);
     background-position: center;
     background-size: cover;
     height: 80vh;
@@ -100,9 +129,13 @@ body{
     font-size: 1.6rem;
     padding: 4%;
 }
+.empform form input:focus{
+    outline: 2px solid var(--main) !important;
+    border: none !important;
+}
 .empform form input[type="radio"]{
     height: 20px;
-    width: 30%;
+    width: 10%;
 }
 .empform form input[type="checkbox"]{
     height: 20px;
@@ -111,6 +144,37 @@ body{
 .empform form textarea{
     font-size: 1.6rem;
     resize: none;
+}
+.empform form textarea:focus{
+    outline: 2px solid var(--main) !important;
+    border: none !important;
+}
+.empform form select{
+    font-size: 1.6rem;
+    padding: 4%;
+}
+.empform form select:focus{
+    outline: 2px solid var(--main) !important;
+    border: none !important;
+}
+.empform form .sel{
+    position: relative;
+}
+.empform form .shift{
+    position: relative;
+}
+.empform form .shift select{
+    padding: 2%;
+}
+.empform form .shift i{
+    position: absolute;
+    bottom: 32px;
+    left: 1050px;
+}
+.empform form .sel i{
+    position: absolute;
+    bottom: 25px;
+    left: 350px;
 }
 .empform form span{
     color: red;
@@ -136,3 +200,135 @@ body{
     color: white !important;
 }
 /* styling employee page done */
+
+/* styling incident page */
+.incbanner{
+    background-image: url(../img/incident_form.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+}
+.incbanner p{
+    font-size: 4rem;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    top: 82.5%;
+    padding: 1% 0;
+}
+.incform{
+    font-size: 1.7rem;
+    width: 95% !important;
+    margin: 0 auto !important;
+}
+
+.incform #layer2{
+    color: red;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.incform #layer3{
+    color: red;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.6rem;
+    padding-bottom: 2%;
+}
+.incform form{
+    border: 2px solid rgb(208, 201, 201);
+    border-radius: 1rem;
+    margin: 3% 0 5%;
+    padding: 2%;
+}
+.incform form label{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.incform form input{
+    font-size: 1.6rem;
+    padding: 4%;
+}
+.incform form input:focus{
+    outline: 2px solid var(--main) !important;
+    border: none !important;
+}
+.incform form textarea:focus{
+    outline: 2px solid var(--main) !important;
+    border: none !important;
+}
+.incform form input[type="radio"]{
+    height: 20px;
+    width: 10%;
+}
+.incform form input[type="checkbox"]{
+    height: 20px;
+    width: 10%;
+}
+.incform form textarea{
+    font-size: 1.6rem;
+    resize: none;
+}
+.incform form span{
+    color: red;
+}
+.incform .house label{
+    font-weight: 100;
+    text-transform: capitalize;
+}
+.incform .house{
+    border: 1px dashed gray;
+    padding: 2% 1% 0;
+}
+.incform form button{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background-color: var(--main);
+    padding: 2% 5%;
+    color: white;
+    font-weight: 900;
+}
+.incform form button:hover{
+    background-color: black !important;
+    color: white !important;
+}
+.incform .type label{
+    text-transform: capitalize;
+    font-weight: 100;
+    margin-left: 10px;
+    font-size: 1.4rem;
+}
+.incform .fname input{
+    padding: 2%;
+}
+.incform .descrip{
+    text-transform: capitalize;
+    background-color: var(--primary);
+    padding: 1% 0;
+}
+.incform .descrip h2{
+    font-weight: 900;
+}
+/* styling incident page done */
+
+/* styling career page */
+.carbanner{
+    background-image: url(../img/career.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+}
+.carbanner p{
+    font-size: 4rem;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    top: 82.5%;
+    padding: 1% 0;
+}
+.empform form select option{
+    font-size: 1.6rem;
+}
+/* styling career page done */

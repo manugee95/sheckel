@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 *{
     padding: 0%;
@@ -9,7 +9,6 @@ html{
     font-size: 10px;
 }
 body{
-    /* background-color: black !important; */
     font-family: 'Montserrat', sans-serif !important;
 }
 :root{
@@ -85,6 +84,7 @@ body{
 .first .intro{
     font-size: 3rem;
     font-weight: 600;
+    color: var(--primary);
 }
 .first h1{
     font-size: 6rem;
@@ -98,6 +98,10 @@ body{
 }
 .firstrow img{
     height: 350px;
+}
+.firstrow span{
+    font-weight: 900;
+    color: var(--main);
 }
 .secrow{
     background-color: white;
@@ -317,6 +321,9 @@ body{
 .contact .row label{
     font-size: 1.6rem;
 }
+.contact .row input{
+    font-size: 1.6rem;
+}
 .contact .row button{
     background-color: var(--main);
     font-size: 1.8rem;
@@ -327,8 +334,31 @@ body{
     background-color: #6ede8a;
     color: black;
 }
+.contact .row .right{
+    text-align: center;
+}
 .contact .row .right img{
     height: 350px;
+}
+.caller{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10%;
+}
+.caller .or{
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+}
+.caller h1{
+    color: var(--main);
+    font-weight: 900;
+    font-size: 40px;
+}
+.caller i{
+    font-size: 60px;
+    color: var(--main);
 }
 /* styling contact done */
 
@@ -355,6 +385,23 @@ body{
     .call i{
         font-size: 20px;
         color: black;
+    }
+    .contact .row .right img{
+        height: 200px !important;
+    }
+    .caller .or{
+        font-size: 3rem;
+        color: black;
+        font-weight: bold;
+    }
+    .caller h1{
+        color: var(--main);
+        font-weight: 900;
+        font-size: 30px;
+    }
+    .caller i{
+        font-size: 60px;
+        color: var(--main);
     }
     .navbar{
         background-color: var(--primary);
@@ -478,6 +525,11 @@ body{
     }
     .lastrow .right ul a:hover{
         color: var(--main);
+    }
+    .empform form i{
+        position: absolute;
+        bottom: 25px;
+        left: 300px;
     }
 }
 
