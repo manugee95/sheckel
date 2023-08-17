@@ -136,10 +136,17 @@ body{
 .empform form input[type="radio"]{
     height: 20px;
     width: 10%;
+    accent-color: var(--main);
 }
 .empform form input[type="checkbox"]{
     height: 20px;
     width: 30%;
+    accent-color: var(--main);
+}
+.empform form input[type="date"]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
 }
 .empform form textarea{
     font-size: 1.6rem;
@@ -152,6 +159,14 @@ body{
 .empform form select{
     font-size: 1.6rem;
     padding: 4%;
+}
+.empform form option:checked{
+    background-color: var(--main) !important;
+    color: white;
+}
+.empform form option:hover{
+    box-shadow: 0 0 10px 100px #18a84d inset !important;
+    cursor: pointer;
 }
 .empform form select:focus{
     outline: 2px solid var(--main) !important;
@@ -241,6 +256,11 @@ body{
     margin: 3% 0 5%;
     padding: 2%;
 }
+.incform form input[type="date"]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+}
 .incform form label{
     text-transform: uppercase;
     font-weight: bold;
@@ -261,10 +281,12 @@ body{
 .incform form input[type="radio"]{
     height: 20px;
     width: 10%;
+    accent-color: var(--main);
 }
 .incform form input[type="checkbox"]{
     height: 20px;
     width: 10%;
+    accent-color: var(--main);
 }
 .incform form textarea{
     font-size: 1.6rem;
